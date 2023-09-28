@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1,.item2{
+height:50px;
+width: 50px;
+border:2px solid black;
+        }
+        .box1{
+            display:flex;
+        }
+        .item1:nth-child(2n+1){
+            background-color:red;
+        }
+        .item2:nth-child(2n){
+            background-color: red;
+        }
+        .car:hover{
+        margin-left: 500px;
+        transition:margin-left 2s;
+        }
+        .car1:hover{
+            transform:rotate(180deg);
+            transition: transform 2s;
+        }
+        .Bike1:hover{
+            transform: scale(1,1.5);
+        }
+        .Bike2:hover{
+            transform: rotate(180deg);
+            transition: transform rotate 2s;
+            transition-delay: 2s;
+        }
+        .Bike3:hover{
+            transform:skew(140deg);
+        }
+        .flag{
+            height:200px;
+            width: 500px;
+        }
+        .round:hover{
+            transform: rotate(180deg);
+            transition: transform rotate 10s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><center><h1>Chess Board</h1></center>
+        <div class="box1">
+            <div class="item1">&#x2656;</div>
+            <div class="item1">&#x2658;</div>
+            <div class="item1">&#x2657;</div>
+            <div class="item1">&#x2655;</div>
+            <div class="item1">&#x2654;</div>
+            <div class="item1">&#x2657;</div>
+            <div class="item1">&#x2658;</div>
+            <div class="item1">&#x2656;</div>
+        </div>
+        <div class="box1">
+            <div class="item2">&#x2659;</div>
+            <div class="item2">&#x2659;</div>
+            <div class="item2">&#x2659;</div>
+            <div class="item2">&#x2659;</div>
+            <div class="item2">&#x2659;</div>
+            <div class="item2">&#x2659;</div>
+            <div class="item2">&#x2659;</div>
+            <div class="item2">&#x2659;</div>
+        </div>
+        <div class="box1">
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+        </div>
+        <div class="box1">
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+        </div>
+        <div class="box1">
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+        </div>
+        <div class="box1">
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+        </div>
+        <div class="box1">
+            <div class="item1">&#x265F;
+            </div>
+            <div class="item1">&#x265F;
+            </div>
+            <div class="item1">&#x265F;
+            </div>
+            <div class="item1">&#x265F;
+            </div>
+            <div class="item1">&#x265F;
+            </div>
+            <div class="item1">&#x265F;
+            </div>
+            <div class="item1">&#x265F;
+            </div>
+            <div class="item1">&#x265F;
+            </div>
+        </div>
+        <div class="box1">
+            <div class="item2">&#x265C;</div>
+            <div class="item2">&#x265E;
+            </div>
+            <div class="item2">&#x265D;</div>
+            <div class="item2">&#x265B;</div>
+            <div class="item2">&#x265A;</div>
+            <div class="item2">&#x265D;</div>
+            <div class="item2">&#x265E;
+            </div>
+            <div class="item2">&#x265C;</div>
+        </div>
+        <br><h2>Car transition</h2>
+        <div class="car">
+            <img src="./car.webp"height="100px"><br></div>
+         <div class="car1" >
+            <img src="./car.webp"height="100px"> </div>   
+</div>
+<br><h1>Css transforms</h1>
+<h4>Scale</h4>
+<div class="Bike1"><img src="./bike.jfif"></div>
+<h4>rotate</h4>
+<div class="Bike2"><img src="./bike.jfif"></div>
+<h4>Skew</h4>
+<div class="Bike3"><img src="./bike.jfif"></div><br>
+<h1>flag task</h1>
+<div class="flag">
+    <div style="background-color: orange;padding:20px;"></div>
+ <div class="round"><div style="background-color: white;padding:10px"><center><img src="./chakram.jfif"height=30px;width:30px;border-radius:15px;></center></div></div>
+    <div style="background-color: green;padding: 20px;"></div>
+</div>
+    </div>
+    
+</body>
+</html>
+   
